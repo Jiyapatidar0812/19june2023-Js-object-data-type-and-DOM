@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+        
+        <script>
+         
+            var student2={  
+             //1.property:value
+                fname:"jiya",
+                lname:"patidar",
+                address:"vikas nagar neemuch",
+                age:21,
+                salary:20000,
+                //1.Function Definition
+                getMyFullAddress(){
+                    console.log("hello"+ this.fname + this.lname + this.address + this.age + "" + this.salary);
+                }
+                
+            }
+            let student3={
+                //1.property:value
+                fname:"garvit",
+                lname:"patidar",
+                age:30,
+                salary:30000,
+                address:"shakti nagar neemuch",
+                getAddress(){
+                    //every function return something
+                    return this.address ;
+                }
+            }
+            
+            console.log(student2.fname); // . is a member selection operator
+            console.log(student2.address);
+            console.log(student2.getMyFullAddress());
+            console.log(student3.getAddress());
+            
+        </script>
+    </body>
+    </html>
